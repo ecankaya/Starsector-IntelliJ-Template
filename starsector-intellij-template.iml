@@ -8,5 +8,19 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="starfarer.api" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/../../starsector-core" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/../../starsector-core" />
+          <root url="file://$MODULE_DIR$/../../starsector-core" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/../../starsector-core" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../starsector-core" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>

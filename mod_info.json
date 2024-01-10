@@ -1,13 +1,13 @@
 {
-    "id":"author_modname", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
-	"name":"Template Mod", # Displayed to the player
-	"author":"Wisp",
+    "id":"Pasha_System", # For the convenience of troubleshooters, include your name and the mod name, not just an acronym.
+	"name":"PashaTemplate Mod", # Displayed to the player
+	"author":"Pasha",
     "utility":"false",
 	"version":"1.0.0",
 	"description":"Starsector IntelliJ template.",
     "gameVersion": "0.96a-RC10", 
-  	"jars":["jars/Template.jar"],
-  	"modPlugin":"author.modname.TemplateModPlugin",
+  	"jars":["jars/MyMod.jar"],
+  	"modPlugin":"author.mymod.TemplateModPlugin",
 	  	"dependencies": [
         #{
         #    "id": "lw_lazylib",
