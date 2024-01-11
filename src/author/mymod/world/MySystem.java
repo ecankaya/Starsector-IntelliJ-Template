@@ -34,21 +34,28 @@ public class MySystem {
 
         PlanetAPI pBarren = system.addPlanet("pBarren",PashaStar,"Pasha I","barren",360 * (float) Math.random(),190f,5000f,900f);
         pBarren.getMarket().addCondition(Conditions.NO_ATMOSPHERE);
+        pBarren.getMarket().addCondition(Conditions.RUINS_VAST);
 
         PlanetAPI pTerran = system.addPlanet("pTerran",PashaStar,"Pasha II","terran",360 * (float) Math.random(),250f,4000f,600f);
         pTerran.getMarket().addCondition(Conditions.FARMLAND_BOUNTIFUL);
         pTerran.getMarket().addCondition(Conditions.MILD_CLIMATE);
         pTerran.getMarket().addCondition(Conditions.HABITABLE);
         pTerran.getMarket().addCondition(Conditions.ORGANICS_PLENTIFUL);
+        pTerran.getMarket().addCondition(Conditions.ORE_ULTRARICH);
+        pTerran.getMarket().addCondition(Conditions.SOLAR_ARRAY);
+        pTerran.getMarket().addCondition(Conditions.RUINS_VAST);
 
-        PlanetAPI pVolcanic = system.addPlanet("pVolcanic",PashaStar,"Pasha III","lava_minor",360 * (float) Math.random(),190f,4000f,300f);
+        PlanetAPI pVolcanic = system.addPlanet("pVolcanic",PashaStar,"Pasha III","lava",360 * (float) Math.random(),190f,4000f,300f);
         pVolcanic.getMarket().addCondition(Conditions.ORE_ULTRARICH);
         pVolcanic.getMarket().addCondition(Conditions.RARE_ORE_ULTRARICH);
         pVolcanic.getMarket().addCondition(Conditions.VERY_HOT);
+        pVolcanic.getMarket().addCondition(Conditions.EXTREME_TECTONIC_ACTIVITY);
+        pVolcanic.getMarket().addCondition(Conditions.RUINS_VAST);
+        pVolcanic.getMarket().addCondition(Conditions.TOXIC_ATMOSPHERE);
 
         PlanetAPI pGas = system.addPlanet("pGas",PashaStar,"Pasha IV","gas_giant",360 * (float) Math.random(),320f,6000f,150f);
-        pGas.getMarket().addCondition(Conditions.VOLATILES_ABUNDANT);
-
+        pGas.getMarket().addCondition(Conditions.VOLATILES_PLENTIFUL);
+        pGas.getMarket().addCondition(Conditions.HIGH_GRAVITY);
         //system.addEntity(jumpPoint3);
 
         system.autogenerateHyperspaceJumpPoints(true, true);
