@@ -45,7 +45,7 @@ public class MySystem {
         pTerran.getMarket().addCondition(Conditions.SOLAR_ARRAY);
         pTerran.getMarket().addCondition(Conditions.RUINS_VAST);
 
-        PlanetAPI pVolcanic = system.addPlanet("pVolcanic",PashaStar,"Pasha III","lava",360 * (float) Math.random(),190f,4000f,300f);
+        PlanetAPI pVolcanic = system.addPlanet("pVolcanic",PashaStar,"Pasha III","lava",360 * (float) Math.random(),190f,3000f,300f);
         pVolcanic.getMarket().addCondition(Conditions.ORE_ULTRARICH);
         pVolcanic.getMarket().addCondition(Conditions.RARE_ORE_ULTRARICH);
         pVolcanic.getMarket().addCondition(Conditions.VERY_HOT);
