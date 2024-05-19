@@ -1,4 +1,4 @@
-package author.mymod.world;
+package Pasha.RacingSector.world;
 
 import com.fs.starfarer.api.campaign.SectorAPI;
 

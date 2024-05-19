@@ -105,7 +105,7 @@ Don't click the Run (play) icon; it will cause the game to wait indefinitely for
 Now you have a template that works, but we need to personalize it so multiple people can use the template without
 stepping on each others' toes, so to speak.
 
-See that in `src`, we have `author.mymod` as the package (which matches the folder path `src/author/modname`).
+See that in `src`, we have `Pasha.RacingSector` as the package (which matches the folder path `src/Pasha/modname`).
 
 1. [ ] The first step is to change the package of our code. This is an organization thing; if there are two Java files
    with
@@ -114,7 +114,7 @@ See that in `src`, we have `author.mymod` as the package (which matches the fold
     1. The easy way to change this is to open up `TemplateModPlugin.java`, click on the first line (`package...`),
        right-click, and choose Refactor -> Rename. Change it to match your username and modname (or whatever you prefer)
        .
-    2. When done, you shouldn't have any code in `author.mymod`. If that still exists, it can be safely deleted.
+    2. When done, you shouldn't have any code in `Pasha.RacingSector`. If that still exists, it can be safely deleted.
     3. 
    ![Rename!](readme_files/intellij-rename.png "Rename")
 2. [ ] Now, we've changed where the ModPlugin is located and we need to tell the game the new location the game can call
