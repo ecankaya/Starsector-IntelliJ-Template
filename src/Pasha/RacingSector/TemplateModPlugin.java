@@ -1,6 +1,5 @@
 package Pasha.RacingSector;
 
-import Pasha.RacingSector.world.MyModGen;
 import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 
@@ -8,6 +7,7 @@ public class TemplateModPlugin extends BaseModPlugin {
     @Override
     public void onApplicationLoad() throws Exception {
         super.onApplicationLoad();
+
 //        initMyMod();
 //
 //         Test that the .jar is loaded and working, using the most obnoxious way possible.
