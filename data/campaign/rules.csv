@@ -1,0 +1,3 @@
+id,trigger,conditions,script,text,options,notes
+playMusicOption,PopulateOptions,$hasMarket,,,askForMusic:"yo, play some music!",,
+askedForMusic,DialogOptionSelected,$option == askForMusic,changeMusic,no problem!,,
