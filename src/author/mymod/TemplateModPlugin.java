@@ -28,7 +28,7 @@ public class TemplateModPlugin extends BaseModPlugin {
 
 //        if (!isNexerelinEnabled || SectorManager.getManager().isCorvusMode()) {
 //                    new MySectorGen().generate(Global.getSector());
-            // Add code that creates a new star system (will only run if Nexerelin's Random (corvus) mode is disabled).
+            // Add code that creates a new star system (will only run if Nexerelin's Random (corvus) mode is disabled)
 //        }
     }
 }

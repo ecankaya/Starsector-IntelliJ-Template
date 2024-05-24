@@ -11,7 +11,7 @@ public class MySystem {
     public void generate(SectorAPI sector) {
 
         StarSystemAPI system = sector.createStarSystem("Pasha");
-        system.getLocation().set(-2000, -4000);
+        system.getLocation().set(-2000, -4000); //near Askonia
 
         // create the star and generate the hyperspace anchor for this system
         PlanetAPI PashaStar = system.initStar("Pasha", // unique id for this star
@@ -43,7 +43,6 @@ public class MySystem {
         //add research station
         SectorEntityToken research = system.addCustomEntity("pasha_research","research station", "station_research",Factions.NEUTRAL);
         research.setCircularOrbit(PashaStar, 180,2500,200);
-
 
         //add weapons cache
         SectorEntityToken weapons = system.addCustomEntity("pasha_weapons","weapons cache", "weapons_cache_high",Factions.NEUTRAL);
@@ -78,22 +77,12 @@ public class MySystem {
         pGas.getMarket().addCondition(Conditions.VOLATILES_PLENTIFUL);
         pGas.getMarket().addCondition(Conditions.HIGH_GRAVITY);
 
+        //center jump point
         JumpPointAPI jump = Global.getFactory().createJumpPoint("inner_jump","Pasha System Jump");
         jump.setCircularOrbit(system.getEntityById("Pasha"),2,2000,4000f);
         jump.setStandardWormholeToHyperspaceVisual();
         system.addEntity(jump);
 
-
         system.autogenerateHyperspaceJumpPoints(true, true);
     }
-
-    public void generateJumpPoint(StarSystemAPI system){
-        JumpPointAPI jumpPoint3 = Global.getFactory().createJumpPoint(
-                "fringe_jump",
-                "Fringe System Jump");
-
-        jumpPoint3.setCircularOrbit(system.getEntityById("Argon"), 2, 2000, 4000f);
-        jumpPoint3.setStandardWormholeToHyperspaceVisual();
-    }
-
 }
